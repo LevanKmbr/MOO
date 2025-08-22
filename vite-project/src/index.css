@@ -1,0 +1,40 @@
+/* Body background + ფონი, ფონტი */
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0),
+    rgb(255, 255, 255),
+    rgb(0, 0, 0)
+  );
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Splash / Loader */
+#loader {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  color: white;
+  font-size: 3rem;
+  font-family: "Roboto Condensed", sans-serif;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 3s ease; /* fade 3 წამი */
+}
+
+#loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Optional: App container styling */
+.container {
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
